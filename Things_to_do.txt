@@ -1,0 +1,21 @@
+Things to do with KSP_Control_Panel:
+
+1. Create GUI on program start that finds and displays the available serial ports
+    on your machine and then allows you to select which port to connect with.
+    -It should allow rescanning for ports without crashing the program so that users
+        can plug in their Arduino even after the Python program or KSP is running.
+
+2. Create GUI to allow user to enter krpc server parameters (i.e. the host ip address and rpc and streaming ports.)
+
+3. Add a bunch of functional KSP <---> Arduino examples using various popular and commonly available components...
+    I'm envisioning something like a recipe book for the common person to make a display panel, control panel, or
+    integrated panel...all with minimal to no actual required coding on their part.
+
+
+
+github project description (in markup):
+# KSP_Control_Panel
+A platform for creating an Arduino-driven real-world physical control panel for Kerbal Space Program.
+**This package allows you to:**
+1. Automatically retrieve vessel/flight surface and orbit data from KSP using the Python krpc package and output via an Arduino to common I<sup>2</sup>C peripherals, such as LCD's and OLED's, etc. \n
+2. Send control instructions to and/or execute code on KSP from custom built control devices such as...well...whatever you cobble together from the mess of components on your project bench...
